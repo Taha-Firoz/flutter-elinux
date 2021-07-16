@@ -1,6 +1,14 @@
 Welcome to the flutter-elinux wiki! All documentation for this software is collected here.
 
 ## 💻 Contents
+### 1. Setup your development environment
+- [Installing flutter-elinux]()
+
+### 2. How to use
+
+- [Commands]()
+
+### 3. Support status
 
 ### 1. Flutter version check
 ```Shell
