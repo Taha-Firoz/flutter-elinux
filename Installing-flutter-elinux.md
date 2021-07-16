@@ -1,5 +1,8 @@
 You need to install the following dependent libraries to use this software. Here introduce how to install the libraries on Debian-based systems like Ubuntu.
 
+## Supported host OS
+Currently, this tool supports only Linux desktop hosts (not supoort Windows and macOS).
+
 ## Dependent libraries
 - curl
 - git
