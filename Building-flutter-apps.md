@@ -10,4 +10,4 @@
 | arm64     | wayland      | release  | `flutter-elinux build elinux --target-arch=arm64` |
 
 ## Build artifacts
-The artifacts will be put in `build/${target-arch}/${build-mode}/bundle`
+The artifacts will be put in `build/${target-arch}/${build-mode}/bundle`.
