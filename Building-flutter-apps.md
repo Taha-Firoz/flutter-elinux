@@ -1,9 +1,5 @@
-## Build with wayland backend for x64 targets in release mode
-```Shell
-$ flutter-elinux build elinux
-```
 
-## Build with wayland backend for x64 targets in debug mode
-```Shell
-$ flutter-elinux build elinux --debug
-```
+|Target arch|Target backend|Build mode| Command |
+| --------- | ------------ | -------- | ------- |
+| x64       | wayland      | release  | `flutter-elinux build elinux` |
+| x64       | wayland      | debug    | `flutter-elinux build elinux --debug` |
