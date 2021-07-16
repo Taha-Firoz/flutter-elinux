@@ -17,4 +17,4 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 
 ## 4. Release policy
 
-## 6. Support status
+## 5. Support status
