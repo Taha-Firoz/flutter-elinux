@@ -2,12 +2,12 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 
 ## 💻 Contents
 
-### Check current Flutter version
+### 1. Flutter version check
 ```Shell
 $ flutter-elinux --version
 ```
 
-### build command
+### 2. build command
 #### Build with wayland backend for x64 targets in release mode
 ```Shell
 $ flutter-elinux build elinux
@@ -18,13 +18,13 @@ $ flutter-elinux build elinux
 $ flutter-elinux build elinux --debug
 ```
 
-### run command
-### Debug mode
+### 3. run command
+#### Debug mode
 ```Shell
 $ flutter-elinux run -d elinux
 ```
 
-### Release mode
+#### Release mode
 ```Shell
 $ flutter-elinux run -d elinux --release
 ```
