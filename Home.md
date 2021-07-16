@@ -2,7 +2,7 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 
 ## 💻 Contents
 ### 1. Setup your development environment
-- [Installing flutter-elinux]()
+- [Installing flutter-elinux](https://github.com/sony/flutter-elinux/wiki/Installing-flutter-elinux)
 
 ### 2. How to use
 
