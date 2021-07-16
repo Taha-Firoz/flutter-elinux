@@ -1,12 +1,9 @@
-
-## create a new flutter project for app
-
+## How to create a new flutter app project
 ```Shell
 $ flutter-elinux create <your_app_project_name>
 ```
 
-## create a new flutter project for plugin
-
+## How to create a new flutter plugin project
 ```Shell
 $ flutter-elinux create --template=plugin <your_plugin_project_name>
 ```
