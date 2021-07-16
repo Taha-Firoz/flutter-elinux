@@ -5,37 +5,10 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 - [Installing flutter-elinux](https://github.com/sony/flutter-elinux/wiki/Installing-flutter-elinux)
 
 ### 2. How to use
-- [Creating a new flutter project]()
-- [Building flutter app]()
-- [Running flutter app]()
-- [Debugging flutter app]()
-- [Other commands]()
+- [Creating new flutter projects]()
+- [Building flutter apps](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps)
+- [How to run flutter apps](https://github.com/sony/flutter-elinux/wiki/How-to-run-flutter-apps)
+- [Debugging flutter apps]()
+- [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
 
 ### 3. Support status
-
-### 1. Flutter version check
-```Shell
-$ flutter-elinux --version
-```
-
-### 2. build command
-#### Build with wayland backend for x64 targets in release mode
-```Shell
-$ flutter-elinux build elinux
-```
-
-#### Build with wayland backend for x64 targets in debug mode
-```Shell
-$ flutter-elinux build elinux --debug
-```
-
-### 3. run command
-#### Debug mode
-```Shell
-$ flutter-elinux run -d elinux
-```
-
-#### Release mode
-```Shell
-$ flutter-elinux run -d elinux --release
-```
