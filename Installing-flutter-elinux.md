@@ -2,6 +2,7 @@ You need to install the following dependent libraries to use this software. Here
 
 ## Mandatory
 - curl
+- git
 
 ```Shell
 $ sudo apt install curl git
