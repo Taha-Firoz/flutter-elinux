@@ -13,4 +13,6 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 - [Debugging flutter apps]()
 - [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
 
-## 3. Support status
+## 3. Plugins
+
+## 4. Support status
