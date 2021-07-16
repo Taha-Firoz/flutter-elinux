@@ -1,6 +1,6 @@
 You need to install the following dependent libraries to use this software. Here introduce how to install the libraries on Debian-based systems like Ubuntu.
 
-## Mandatory
+## Dependent libraries
 - curl
 - git
 
