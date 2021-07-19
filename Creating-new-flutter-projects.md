@@ -7,3 +7,9 @@ $ flutter-elinux create <your_app_project_name>
 ```Shell
 $ flutter-elinux create -t plugin <your_plugin_project_name>
 ```
+
+After creating the plugin template, you need to modify `pubspec.yaml` file. Open it and replace the `some_platform`: map with `elinux`:
+```Yaml
+elinux:
+  pluginClass: PluginNamePlugin
+```
