@@ -1,7 +1,7 @@
 **Currently, x64 and Wayland target is only supported.**
 
 ## How to build
-Use `--target-backend-type` option to select display backends.
+Use `--target-backend-type` option to select display backends. Default is Wayland.
 
 |Target arch|Target backend|Build mode| Command |
 | --------- | ------------ | -------- | ------- |
@@ -15,7 +15,7 @@ Use `--target-backend-type` option to select display backends.
 | x64       | eglstream    | debug    | `flutter-elinux build elinux --debug --target-backend-type=eglstream` |
 
 ## How to cross-build
-Use `--target-arch` option to cross-build for arm64 targets on x64 hosts.
+Use `--target-arch` option to cross-build for arm64 targets on x64 hosts. Default is current host CPU architecture.
 
 |Target arch|Target backend|Build mode| Command |
 | --------- | ------------ | -------- | ------- |
