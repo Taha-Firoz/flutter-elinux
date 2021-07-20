@@ -6,9 +6,12 @@ Currently, this tool supports only **Linux** desktop (not supoort Windows and ma
 ## Dependent libraries
 - curl
 - git
+- clang
+- cmake
+- pkg-config
 
 ```Shell
-$ sudo apt install curl git
+$ sudo apt install curl git clang cmake pkg-config
 ```
 
 ## How to install flutter-elinux
