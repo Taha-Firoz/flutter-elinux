@@ -3,13 +3,6 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 **Now, we are still creating the manuals!!**
 
 ## 💻 Contents
-## 0. Design document
-### Tools
-To Be Added
-
-### Embedded Linux embedding for Flutter (Flutter Engine)
-See: https://github.com/sony/flutter-embedded-linux/wiki
-
 ## 1. Setup your development environment
 - [Installing flutter-elinux](https://github.com/sony/flutter-elinux/wiki/Installing-flutter-elinux)
 
@@ -28,3 +21,10 @@ To Be Added
 
 ## 5. Support status
 To Be Added
+
+## 6. Design document
+### Tools
+To Be Added
+
+### Embedded Linux embedding for Flutter (Flutter Engine)
+See: https://github.com/sony/flutter-embedded-linux/wiki
