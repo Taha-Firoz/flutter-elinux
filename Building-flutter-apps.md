@@ -1,4 +1,4 @@
-## How to build your flutter app
+## 1. How to build your flutter app
 ### Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
@@ -27,5 +27,5 @@ Use `--target-arch` option to cross-build for arm64 targets on x64 hosts. Defaul
 | gbm          | debug    | `flutter-elinux build elinux --debug --target-arch=arm64 --target-backend-type=gbm` |
 | eglstream    | debug    | `flutter-elinux build elinux --debug --target-arch=arm64 --target-backend-type=eglstream` |
 
-## Build artifacts
+## 2. Build artifacts
 The artifacts will be put in `build/${target-arch}/${build-mode}/bundle`.
