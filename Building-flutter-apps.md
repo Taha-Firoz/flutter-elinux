@@ -54,5 +54,12 @@ $ sudo docker cp f367a6b0316f:/ ubuntu18-arm64-sysroot
 $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot
 ```
 
+#### Troubleshooting
+If you get the following error, use `--system-include-directories` option.
+
+```Shell
+$ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot --system-include-directories=/usr/aarch64-linux-gnu/include/c++/${version}/aarch64-linux-gnu
+```
+
 ## 3. Build artifacts
 The artifacts will be put in `build/${target-arch}/${build-mode}/bundle`.
