@@ -1,6 +1,4 @@
-**Currently, x64 and Wayland target is only supported.**
-
-## How to build
+## Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
 |Target arch|Target backend|Build mode| Command |
@@ -14,7 +12,7 @@ Use `--target-backend-type` option to select display backends. Default is Waylan
 | x64       | gbm          | debug    | `flutter-elinux build elinux --debug --target-backend-type=gbm` |
 | x64       | eglstream    | debug    | `flutter-elinux build elinux --debug --target-backend-type=eglstream` |
 
-## How to cross-build
+## Cross-building from x64 to arm64
 Use `--target-arch` option to cross-build for arm64 targets on x64 hosts. Default is current host CPU architecture.
 
 |Target arch|Target backend|Build mode| Command |
