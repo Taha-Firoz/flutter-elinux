@@ -37,8 +37,10 @@ In docker:
 # exit
 
 $ sudo docker ps -a
-
-$ sudo docker cp 
+CONTAINER ID   IMAGE                 COMMAND   CREATED       STATUS                   PORTS     NAMES
+f367a6b0316f   arm64v8/ubuntu:18.04  "bash"    4 hours ago   Exited (0) 4 hours ago   interesting_knuth
+$ mkdir ~/ubuntu18-arm64-sysroot
+$ sudo docker cp f367a6b0316f:/ ~/ubuntu18-arm64-sysroot
 ```
 
 ## 2. Build artifacts
