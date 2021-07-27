@@ -9,7 +9,7 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 ## 2. How to use
 - [Creating new flutter projects](https://github.com/sony/flutter-elinux/wiki/Creating-new-flutter-projects)
 - [Building flutter apps](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps)
-- [How to run flutter apps](https://github.com/sony/flutter-elinux/wiki/How-to-run-flutter-apps)
+- [Running flutter apps](https://github.com/sony/flutter-elinux/wiki/Running-flutter-apps)
 - [Debugging flutter apps]()
 - [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
 
