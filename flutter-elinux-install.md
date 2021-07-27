@@ -1,6 +1,6 @@
 You need to install the following dependent libraries to use this software. Here introduce how to install the libraries on Debian-based systems like Ubuntu.
 
-## System requirements
+## 1. System requirements
 ### Operating Systems
 Currently, this tool supports only **Linux** desktop (not supoort Windows and macOS). We recommend using Ubuntu 18 or 20.
 
@@ -18,7 +18,7 @@ Currently, this tool supports only **Linux** desktop (not supoort Windows and ma
 $ sudo apt install curl git clang cmake pkg-config
 ```
 
-## flutter-elinux install
+## 2. flutter-elinux install
 ```Shell
 $ git clone https://github.com/sony/flutter-elinux.git
 $ sudo mv flutter-elinux /opt/
@@ -41,7 +41,7 @@ eLinux (desktop) • elinux-wayland • flutter-tester • Ubuntu 20.04.2 LTS 5.
 eLinux (desktop) • elinux-x11     • flutter-tester • Ubuntu 20.04.2 LTS 5.8.0-63-generic
 ```
 
-## Installing dependent libraies for flutter-elinux runner (core library/embedder)
+## 3. Installing dependent libraies for flutter-elinux runner (core library/embedder)
 See also: https://github.com/sony/flutter-embedded-linux/wiki/Installing-dependent-libraries
 
 ### Mandatory
