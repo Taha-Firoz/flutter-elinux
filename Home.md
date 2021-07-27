@@ -10,8 +10,9 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 - [Creating new flutter projects](https://github.com/sony/flutter-elinux/wiki/Creating-new-flutter-projects)
 - [Building flutter apps](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps)
 - [Running flutter apps](https://github.com/sony/flutter-elinux/wiki/Running-flutter-apps)
-- [Debugging flutter apps]()
+- Debugging flutter apps
 - [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
+- Remote target devices
 
 ## 3. Plugins
 To Be Added
