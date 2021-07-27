@@ -35,7 +35,9 @@ $ sudo docker run -it arm64v8/ubuntu:18:04
 
 In docker:
 ```Shell
-apt install clang cmake build-essential pkg-config libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev
+apt install clang cmake build-essential \
+            pkg-config libegl1-mesa-dev \
+            libxkbcommon-dev libgles2-mesa-dev
 apt install libwayland-dev wayland-protocols
 exit
 ```
@@ -51,14 +53,23 @@ $ sudo docker cp f367a6b0316f:/ ubuntu18-arm64-sysroot
 
 #### Build flutter apps
 ```Shell
-$ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot
+$ flutter-elinux build elinux --target-arch=arm64 \
+     --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot
 ```
 
 #### Troubleshooting
 If you get the following error, use `--system-include-directories` option.
+```
+/usr/bin/../lib/gcc-cross/aarch64-linux-gnu/9/../../../../include/c++/9/casse
+rt:43:10: fatal error: 'bits/c++config.h' file not found
+#include <bits/c++config.h>
+         ^~~~~~~~~~~~~~~~~~
+```
 
 ```Shell
-$ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot --system-include-directories=/usr/aarch64-linux-gnu/include/c++/${version}/aarch64-linux-gnu
+$ flutter-elinux build elinux --target-arch=arm64 \
+     --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot \
+     --system-include-directories=/usr/aarch64-linux-gnu/include/c++/${version}/aarch64-linux-gnu
 ```
 
 ## 3. Build artifacts
