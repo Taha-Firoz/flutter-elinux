@@ -40,3 +40,33 @@ $ flutter-elinux devices
 eLinux (desktop) • elinux-wayland • flutter-tester • Ubuntu 20.04.2 LTS 5.8.0-63-generic
 eLinux (desktop) • elinux-x11     • flutter-tester • Ubuntu 20.04.2 LTS 5.8.0-63-generic
 ```
+
+## Installing dependent libraies for flutter-elinux runner (core library/embedder)
+See also: https://github.com/sony/flutter-embedded-linux/wiki/Installing-dependent-libraries
+
+### Mandatory
+- EGL
+- xkbcommon
+- OpenGL ES (>=2.0)
+
+```Shell
+$ sudo apt install libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev
+```
+
+## Only when using flutter runner for Wayland
+- libwayland
+
+```Shell
+$ sudo apt install libwayland-dev
+```
+
+## Only when using flutter runner for DRM
+- libdrm
+- libgbm
+- libinput
+- libudev
+- libsystemd
+
+```Shell
+$ sudo apt install libdrm-dev libgbm-dev libinput-dev libudev-dev libsystemd-dev
+```
