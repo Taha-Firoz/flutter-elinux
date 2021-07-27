@@ -45,13 +45,13 @@ Copy sysroot from the container to host:
 $ sudo docker ps -a
 CONTAINER ID   IMAGE                 COMMAND   CREATED       STATUS                   PORTS     NAMES
 f367a6b0316f   arm64v8/ubuntu:18.04  "bash"    4 hours ago   Exited (0) 4 hours ago   interesting_knuth
-$ mkdir ~/ubuntu18-arm64-sysroot
-$ sudo docker cp f367a6b0316f:/ ~/ubuntu18-arm64-sysroot
+$ mkdir ubuntu18-arm64-sysroot
+$ sudo docker cp f367a6b0316f:/ ubuntu18-arm64-sysroot
 ```
 
 #### Build flutter apps
 ```Shell
-$ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=~/ubuntu18-arm64-sysroot
+$ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot
 ```
 
 ## 3. Build artifacts
