@@ -22,6 +22,12 @@ $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_targ
 ### Example
 There are some ways to create a sysroot like Yocto, buildroot, and so on. Here, we show an example using a sysroot for arm64v8/ubuntu:18.04 docker image, but using sysroot and toolchain for your target device is better.
 
+#### Install cross-build tools
+```Shell
+$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+$ sudo apt install libstdc++-8-dev-arm64-cross
+```
+
 #### Create sysroot for arm64
 First, install Docker by following [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
