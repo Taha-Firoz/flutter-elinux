@@ -35,12 +35,12 @@ $ sudo docker run -it arm64v8/ubuntu:18:04
 
 In docker:
 ```Shell
-# apt install clang cmake build-essential pkg-config libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev
-# apt install libwayland-dev wayland-protocols
-# exit
+apt install clang cmake build-essential pkg-config libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev
+apt install libwayland-dev wayland-protocols
+exit
 ```
 
-Copy sysroot:
+Copy sysroot from the container to host:
 ```Shell
 $ sudo docker ps -a
 CONTAINER ID   IMAGE                 COMMAND   CREATED       STATUS                   PORTS     NAMES
