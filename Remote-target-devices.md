@@ -1,6 +1,7 @@
 In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps.
 
 ## 1. Create `~/.flutter_custom_devices.json`
+`${localPath}`, `${appName}`, `${hostPort}`, `${devicePort}` are the system reserved vars, which are automatically determined by flutter-elinux tool. Set each value appropriately according to your target device. Also, you can add multi devices to the JSON file.
 
 `~/.flutter_custom_devices.json` example:
 ```Json
@@ -37,6 +38,7 @@ In embedded development, we usually install software to remote target devices. I
 ```
 
 ## 2. Device discovery
+Make sure that the devices found by the `ping` command are listed.
 
 ```Shell
 $ flutter-elinux devices
@@ -48,7 +50,8 @@ eLinux (mobile)  • raspberry-pi4  • flutter-tester • Rasberry Pi 4
 ```
 
 ## 3. Build your flutter apps for target devices
-See also: [Cross-building from x64 to arm64](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps#2-cross-building-from-x64-to-arm64)
+Build for the target device.　See also: [Cross-building from x64 to arm64](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps#2-cross-building-from-x64-to-arm64)
+
 ```Shell
 flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysroot \
     --system-include-directories=/usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu \
@@ -64,12 +67,12 @@ $ flutter-elinux run -d raspberry-pi4
 
 ## 5. Other commands
 
-### Install
+### Install your flutter app bundle
 ```Shell
 $ flutter-elinux install -d raspberry-pi4
 ```
 
-### Uninstall
+### Uninstall your flutter app bundle
 ```Shell
 $ flutter-elinux uninstall -d raspberry-pi4
 ```
