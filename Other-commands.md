@@ -1,14 +1,14 @@
-## Check flutter tools version
+### Check the Flutter tools version
 ```Shell
 $ flutter-elinux --version
 ```
 
-## Show help
+### Show help
 ```
 $ flutter-elinux --help
 ```
 
-## Show information about the installed tooling
+### Flutter diagnosis
 ```Shell
 $  flutter-elinux doctor
 ```
