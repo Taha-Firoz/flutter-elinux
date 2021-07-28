@@ -1,8 +1,8 @@
 In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps.
 
-## 1. Create `.flutter_custom_devices.json`
+## 1. Create `~/.flutter_custom_devices.json`
 
-`.flutter_custom_devices.json` example:
+`~/.flutter_custom_devices.json` example:
 ```Json
 {
   "custom-devices": [
