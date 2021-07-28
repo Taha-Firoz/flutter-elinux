@@ -2,10 +2,7 @@ You need to install the following dependent libraries to use this software. Here
 
 ## 1. System requirements
 ### Operating Systems
-Currently, this tool supports only **Linux** desktop (not supoort Windows and macOS). We recommend using Ubuntu 18 or 20.
-
-- [x] x64 Linux desktop
-- [ ] arm64 Linux desktop
+Currently, this tool supports only **Linux** desktop (not supoort Windows and macOS). We recommend using Ubuntu 18 or 20. Also, x64 and Arm64 Linux desktop are supported.
 
 ### Dependent libraries
 - curl
