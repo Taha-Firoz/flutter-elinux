@@ -1,6 +1,8 @@
 ## 1. Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
+Note: `gbm` and `eglstream` are not supported yet!
+
 |Build mode |Target backend| Command |
 | --------- | ------------ | ------- |
 | release   | wayland      | `flutter-elinux build elinux` |
