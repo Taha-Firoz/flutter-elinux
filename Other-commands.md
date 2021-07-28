@@ -13,7 +13,7 @@ $ flutter-elinux --help
 $  flutter-elinux doctor
 ```
 
-## Download the Flutter tool's cache of binary artifacts
+### Download the Flutter tool's cache of binary artifacts
 ```Shell
 $ flutter-elinux precache
 ```
