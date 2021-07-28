@@ -48,7 +48,7 @@ eLinux (mobile)  • raspberry-pi4  • flutter-tester • Rasberry Pi 4
 ```
 
 ## 3. Build your flutter apps for target devices
-
+See also: [Cross-building from x64 to arm64](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps#2-cross-building-from-x64-to-arm64)
 ```Shell
 flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysroot \
     --system-include-directories=/usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu \
@@ -56,6 +56,20 @@ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysr
 ```
 
 ## 4. Run your flutter apps on your target device
+Note that `run` sub-command for custom-devices is supported `debug` mode only.
+
 ```Shell
 $ flutter-elinux run -d raspberry-pi4
+```
+
+## 5. Other commands
+
+### Install
+```Shell
+$ flutter-elinux install -d raspberry-pi4
+```
+
+### Uninstall
+```Shell
+$ flutter-elinux uninstall -d raspberry-pi4
 ```
