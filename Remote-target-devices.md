@@ -38,7 +38,24 @@ In embedded development, we usually install software to remote target devices. I
 
 ## 2. Device discovery
 
+```Shell
+$ flutter-elinux devices
+3 connected devices:
+
+eLinux (desktop) • elinux-wayland • flutter-tester • Ubuntu 20.04.2 LTS 5.8.0-63-generic
+eLinux (desktop) • elinux-x11     • flutter-tester • Ubuntu 20.04.2 LTS 5.8.0-63-generic
+eLinux (mobile)  • raspberry-pi4  • flutter-tester • Rasberry Pi 4
+```
 
 ## 3. Build your flutter apps for target devices
 
+```Shell
+flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysroot \
+    --system-include-directories=/usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu \
+    --debug
+```
+
 ## 4. Run your flutter apps on your target device
+```Shell
+$ flutter-elinux run -d raspberry-pi4
+```
