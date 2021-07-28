@@ -6,7 +6,7 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 ## 1. Setting up flutter-elinux
 - [flutter-elinux install](https://github.com/sony/flutter-elinux/wiki/flutter-elinux-install)
 
-## 2. How to use
+## 2. Flutter app development
 - [Creating new flutter projects](https://github.com/sony/flutter-elinux/wiki/Creating-new-flutter-projects)
 - [Building flutter apps](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps)
 - [Running flutter apps](https://github.com/sony/flutter-elinux/wiki/Running-flutter-apps)
