@@ -1,3 +1,5 @@
+If you use the `run` sub-command, the `build` sub-command will be also done automatically.
+
 ## Use Flutter runner for Wayland
 Note: you need to install a Wayland compositor such as Weston and launch it before launching your Flutter apps.
 
