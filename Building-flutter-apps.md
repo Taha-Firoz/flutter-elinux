@@ -1,20 +1,20 @@
 ## 1. Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
-|Target backend|Build mode| Command |
-| ------------ | -------- | ------- |
-| wayland      | release  | `flutter-elinux build elinux` |
-| x11          | release  | `flutter-elinux build elinux --target-backend-type=x11` |
-| gbm          | release  | `flutter-elinux build elinux --target-backend-type=gbm` |
-| eglstream    | release  | `flutter-elinux build elinux --target-backend-type=eglstream` |
-| wayland      | debug    | `flutter-elinux build elinux --debug` |
-| x11          | debug    | `flutter-elinux build elinux --debug --target-backend-type=x11` |
-| gbm          | debug    | `flutter-elinux build elinux --debug --target-backend-type=gbm` |
-| eglstream    | debug    | `flutter-elinux build elinux --debug --target-backend-type=eglstream` |
-| wayland      | profile  | `flutter-elinux build elinux --profile` |
-| x11          | profile  | `flutter-elinux build elinux --profile --target-backend-type=x11` |
-| gbm          | profile  | `flutter-elinux build elinux --profile --target-backend-type=gbm` |
-| eglstream    | profile  | `flutter-elinux build elinux --profile --target-backend-type=eglstream` |
+|Build mode |Target backend| Command |
+| --------- | ------------ | ------- |
+| release   | wayland      | `flutter-elinux build elinux` |
+|           | x11          | `flutter-elinux build elinux --target-backend-type=x11` |
+|           | gbm          | `flutter-elinux build elinux --target-backend-type=gbm` |
+|           | eglstream    | `flutter-elinux build elinux --target-backend-type=eglstream` |
+| debug     | wayland      | `flutter-elinux build elinux --debug` |
+|           | x11          | `flutter-elinux build elinux --debug --target-backend-type=x11` |
+|           | gbm          | `flutter-elinux build elinux --debug --target-backend-type=gbm` |
+|           | eglstream    | `flutter-elinux build elinux --debug --target-backend-type=eglstream` |
+| profile   | wayland      | `flutter-elinux build elinux --profile` |
+|           | x11          | `flutter-elinux build elinux --profile --target-backend-type=x11` |
+|           | gbm          | `flutter-elinux build elinux --profile --target-backend-type=gbm` |
+|           | eglstream    | `flutter-elinux build elinux --profile --target-backend-type=eglstream` |
 
 ## 2. Cross-building from x64 to arm64
 Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, Use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
