@@ -1,3 +1,13 @@
+## 0. Pre-built images
+flutter-elinux download the Flutter engine artifacts such as `libflutter_engine.so` and `libflutter_elinux_wayland.so` automatically when you build your Flutter app. These .so files are download from [sony/flutter-embedded-linux/releases](https://github.com/sony/flutter-embedded-linux/releases) built with a specific toolchain. Therefore, if you want to use your toolchain, you need to build it yourself.
+
+For reference, the toolchain that the current .so files are built is summarized below.
+
+| .so file  | toolchain | sysroot | glibc |
+| --------- | --------- | ------- | ----- |
+| libflutter_engine.so | Google | Google | 2.29 |
+| libflutter_elinux_*.so | clang/llvm (Ubuntu 18.04) | Ubuntu 18.04 for arm64 | 2.27 |
+
 ## 1. Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
