@@ -1,6 +1,6 @@
 # Documentation
 
-[Home](https://github.com/sony/flutter-elinux/wiki)
+### &#x1f3e0; [Home](https://github.com/sony/flutter-elinux/wiki)
 
 ## Setting up flutter-elinux
 - [flutter-elinux install](https://github.com/sony/flutter-elinux/wiki/flutter-elinux-install)
