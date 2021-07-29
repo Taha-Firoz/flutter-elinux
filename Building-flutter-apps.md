@@ -28,7 +28,7 @@ Cross-building requires knowledge (Not easy, you might get build errors). You ne
 $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_target's_sysroot>
 ```
 
-### Use caces
+### Use cases
 There are some ways to cross-build, and are some ways to create a sysroot like Yocto, buildroot, and so on.
 1. Use Docker + QEMU
 2. Use buildroot
