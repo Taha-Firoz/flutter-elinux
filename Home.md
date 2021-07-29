@@ -16,7 +16,7 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 - [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
 
 ## 3. Plugins
-To Be Added
+Flutter plugins like VideoPlayer for eLinux are put and developing in [flutter-elinux-plugins](https://github.com/sony/flutter-elinux-plugins).
 
 ## 4. Release policy
 This tool is released in conjunction with the [beta channel of the official Flutter](https://flutter.dev/docs/development/tools/sdk/releases?tab=linux). We plan to switch to following the stable channel in the near future.
