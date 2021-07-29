@@ -5,7 +5,7 @@ For reference, the toolchain that the current .so files are built is summarized 
 
 | .so file  | toolchain | sysroot | glibc |
 | --------- | --------- | ------- | ----- |
-| libflutter_engine.so | Google | Google | 2.29 |
+| libflutter_engine.so | Google chrome | Google chrome | 2.29 |
 | libflutter_elinux_*.so | clang/llvm (Ubuntu 18.04) | Ubuntu 18.04 for arm64 | 2.27 |
 
 ## 1. Self-building
