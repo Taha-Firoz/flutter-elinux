@@ -18,7 +18,10 @@ Use `--target-backend-type` option to select display backends. Default is Waylan
 |           | gbm          | `flutter-elinux build elinux --profile --target-backend-type=gbm` |
 |           | eglstream    | `flutter-elinux build elinux --profile --target-backend-type=eglstream` |
 
-## 2. Cross-building from x64 to arm64
+## 2. Build artifacts
+The artifacts will be put in `./build/${target-arch}/${build-mode}/bundle`.
+
+## 3. Cross-building from x64 to arm64
 Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, Use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
 
 ```Shell
@@ -83,6 +86,3 @@ $ flutter-elinux build elinux --target-arch=arm64 \
      --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot \
      --system-include-directories=/usr/aarch64-linux-gnu/include/c++/${version}/aarch64-linux-gnu
 ```
-
-## 3. Build artifacts
-The artifacts will be put in `build/${target-arch}/${build-mode}/bundle`.
