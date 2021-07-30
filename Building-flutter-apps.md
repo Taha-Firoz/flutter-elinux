@@ -1,7 +1,7 @@
 ## 0. Pre-built images
-flutter-elinux download the Flutter engine artifacts such as `libflutter_engine.so` and `libflutter_elinux_wayland.so` automatically when you build your Flutter app. These .so files are download from [sony/flutter-embedded-linux/releases](https://github.com/sony/flutter-embedded-linux/releases) built with a specific toolchain. Therefore, if you want to use your toolchain, you need to build it yourself.
+flutter-elinux download the Flutter engine artifacts such as `libflutter_engine.so` and `libflutter_elinux_wayland.so` to `./flutter/bin/cache/artifacts/engine` automatically when you build your Flutter app. These .so files are download from [sony/flutter-embedded-linux/releases](https://github.com/sony/flutter-embedded-linux/releases) built with a specific toolchain. Therefore, if you want to use your toolchain, you need to build it yourself.
 
-For reference, the toolchain that the current .so files are built is summarized below.
+For reference, the toolchain that the current .so files are built is below.
 
 | .so file  | toolchain | sysroot | glibc |
 | --------- | --------- | ------- | ----- |
@@ -40,7 +40,7 @@ $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_targ
 
 ### Use cases
 There are some ways to cross-build, and are some ways to create a sysroot like Yocto, buildroot, and so on.
-1. Use Docker + QEMU
+1. [Use Docker + QEMU](#case-1-use-docker--qemu)
 2. Use buildroot
 3. Use Yocto SDK
 
