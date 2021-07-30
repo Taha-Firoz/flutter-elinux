@@ -4,11 +4,15 @@ If you use the `run` sub-command, the `build` sub-command will be also done auto
 Note: you need to install a Wayland compositor such as Weston and launch it before launching your Flutter apps.
 
 ### Debug mode
+You can Dart debugger and profiler in this mode.
+
 ```Shell
 $ flutter-elinux run -d elinux-wayland
 ```
 
 ### Profile mode
+You can Dart profiler in this mode.
+
 ```Shell
 $ flutter-elinux run -d elinux-wayland --profile
 ```
