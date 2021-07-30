@@ -43,11 +43,11 @@ See also: https://github.com/sony/flutter-embedded-linux/wiki/Installing-depende
 
 ### Mandatory
 - EGL
-- xkbcommon
 - OpenGL ES (>=2.0)
+- xkbcommon
 
 ```Shell
-$ sudo apt install libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev
+$ sudo apt install libegl1-mesa libgles2-mesa libxkbcommon-dev
 ```
 
 ## Only when using flutter runner for Wayland
