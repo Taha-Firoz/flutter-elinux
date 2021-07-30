@@ -6,6 +6,7 @@ You will find the following message in the console when you run Flutter apps. Yo
 ```Shell
 flutter: Observatory listening on http://127.0.0.1:43377/390I4oPyQ0U=/
 ```
+
 ## 2. Flutter attach debugger
 
 ```Shell
