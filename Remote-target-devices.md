@@ -91,12 +91,12 @@ http://127.0.0.1:9100?uri=http://127.0.0.1:43237/xd6sW5hdEoE=/
 
 ## 5. Other commands
 
-### Install your flutter app bundle
+### Install your flutter app bundle to the target device
 ```Shell
 $ flutter-elinux install -d raspberry-pi4
 ```
 
-### Uninstall your flutter app bundle
+### Uninstall your flutter app bundle to the target device
 ```Shell
 $ flutter-elinux uninstall -d raspberry-pi4
 ```
