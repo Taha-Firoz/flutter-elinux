@@ -21,7 +21,7 @@ Create a [launch.json file](https://code.visualstudio.com/docs/editor/debugging#
       "name": "Flutter eLinux desktop Attach",
       "request": "attach",
       "deviceId": "flutter-tester",
-      "observatoryUri": "http://127.0.0.1:40409/k8IUol2dnPI=/"
+      "observatoryUri": "http://127.0.0.1:43377/390I4oPyQ0U=/"
     }
   ]
 }
