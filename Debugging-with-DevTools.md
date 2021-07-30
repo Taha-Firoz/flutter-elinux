@@ -1,6 +1,6 @@
 See also: [DevTools -Flutter](https://flutter.dev/docs/development/tools/devtools)
 
-## Run your Flutter app
+## 1. Run your Flutter app
 
 ```
 $ flutter-elinux run -d elinux-x11
@@ -24,6 +24,6 @@ The Flutter DevTools debugger and profiler on eLinux is available at:
 http://127.0.0.1:9100?uri=http://127.0.0.1:44541/mS6Wmf1jTCk=/
 ```
 
-## Open DevTools and connect to the target app
+## 2. Open DevTools and connect to the target app
 Open `http://127.0.0.1:9100?uri=http://127.0.0.1:44541/mS6Wmf1jTCk=/` on your browser.
 ![Screenshot from 2021-07-30 17-18-27](https://user-images.githubusercontent.com/62131389/127624155-bad79120-8ab6-4704-acbe-e0e1c50ab566.png)
