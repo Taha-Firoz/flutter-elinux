@@ -1,9 +1,10 @@
-## How to create a new flutter app project
+## Create a new flutter project
+### Flutter app project
 ```Shell
 $ flutter-elinux create <your_app_project_name>
 ```
 
-## How to create a new flutter plugin project
+### Flutter plugin project
 ```Shell
 $ flutter-elinux create -t plugin <your_plugin_project_name>
 ```
@@ -12,4 +13,12 @@ After creating the plugin template, you need to modify `pubspec.yaml` file. Open
 ```Yaml
 elinux:
   pluginClass: PluginNamePlugin
+```
+
+## flutter-elinux with existing projects
+If you would like to use flutter for elinux for existing flutter projects, you need to prepate `elinux` directory.
+
+```Shell
+$ cd <your_existing_flutter_project>
+$ flutter-elinux create .
 ```
