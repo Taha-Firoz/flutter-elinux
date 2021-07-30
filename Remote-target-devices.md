@@ -59,10 +59,35 @@ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysr
 ```
 
 ## 4. Run your flutter apps on your target device
-Note that `run` sub-command for custom-devices is supported `debug` mode only.
-
 ```Shell
 $ flutter-elinux run -d raspberry-pi4
+$ flutter-elinux run -d raspberry-pi4
+Launching lib/main.dart on eLinux in debug mode...
+Uninstall sample from raspberry-pi4.
+user@192.168.0.100's password: 
+Uninstallation Success
+Install sample (build/elinux/arm64/debug/bundle) to raspberry-pi4
+user@192.168.0.100's password: 
+Installation Success
+Launch sample.name on raspberry-pi4
+user@192.168.0.100's password: 
+user@192.168.0.100's password: 
+Syncing files to device eLinux...                                  202ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+💪 Running with sound null safety 💪
+
+An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:43237/xd6sW5hdEoE=/
+Activating Dart DevTools...                                      1,830ms
+The Flutter DevTools debugger and profiler on eLinux is available at:
+http://127.0.0.1:9100?uri=http://127.0.0.1:43237/xd6sW5hdEoE=/
 ```
 
 ## 5. Other commands
