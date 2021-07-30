@@ -61,7 +61,6 @@ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=/opt/arm64-sysr
 ## 4. Run your flutter apps on your target device
 ```Shell
 $ flutter-elinux run -d raspberry-pi4
-$ flutter-elinux run -d raspberry-pi4
 Launching lib/main.dart on eLinux in debug mode...
 Uninstall sample from raspberry-pi4.
 user@192.168.0.100's password: 
