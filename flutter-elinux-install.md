@@ -50,14 +50,14 @@ See also: https://github.com/sony/flutter-embedded-linux/wiki/Installing-depende
 $ sudo apt install libegl1-mesa libgles2-mesa libxkbcommon-dev
 ```
 
-## Only when using Wayland flutter runner
+### Only when using Wayland flutter runner
 - libwayland
 
 ```Shell
 $ sudo apt install libwayland-dev
 ```
 
-## Only when using DRM flutter runner
+### Only when using DRM flutter runner
 - libdrm
 - libgbm
 - libinput
