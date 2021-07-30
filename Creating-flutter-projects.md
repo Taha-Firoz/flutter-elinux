@@ -1,4 +1,4 @@
-## Create a new flutter project
+## 1. Create a new flutter project
 ### Flutter app project
 ```Shell
 $ flutter-elinux create <your_app_project_name>
@@ -15,7 +15,7 @@ elinux:
   pluginClass: PluginNamePlugin
 ```
 
-## flutter-elinux with existing projects
+## 2. Use existing official flutter projects
 If you would like to use flutter for elinux for existing flutter projects, you need to prepate `elinux` directory.
 
 ```Shell
