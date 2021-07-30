@@ -10,6 +10,7 @@ Welcome to the flutter-elinux wiki! All documentation for this software is colle
 - [Creating flutter projects](https://github.com/sony/flutter-elinux/wiki/Creating-flutter-projects)
 - [Building flutter apps](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps)
 - [Running flutter apps](https://github.com/sony/flutter-elinux/wiki/Running-flutter-apps)
+- [Debugging with CLI](https://github.com/sony/flutter-elinux/wiki/Debugging-with-CLI)
 - Debugging with VSCode
 - Debugging with DevTools
 - [Remote target devices](https://github.com/sony/flutter-elinux/wiki/Remote-target-devices)
