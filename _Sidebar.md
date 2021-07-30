@@ -12,7 +12,7 @@
 - [Remote target devices](https://github.com/sony/flutter-elinux/wiki/Remote-target-devices)
 - [Debugging with CLI](https://github.com/sony/flutter-elinux/wiki/Debugging-with-CLI)
 - [Debugging with VSCode](https://github.com/sony/flutter-elinux/wiki/Debugging-with-VSCode)
-- Debugging with DevTools
+- [Debugging with DevTools](https://github.com/sony/flutter-elinux/wiki/Debugging-with-DevTools)
 - [Other commands](https://github.com/sony/flutter-elinux/wiki/Other-commands)
 
 ## Plugins
