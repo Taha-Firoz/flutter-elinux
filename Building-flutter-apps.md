@@ -29,7 +29,9 @@ Use `--target-backend-type` option to select display backends. Default is Waylan
 |           | eglstream    | `flutter-elinux build elinux --profile --target-backend-type=eglstream` |
 
 ## 2. Build artifacts
-The artifacts will be put in your project under `./build/<target_arch>/<build_mode>/bundle`.
+The artifacts will be put in your project under `./build/<target_arch>/<build_mode>/bundle`. Alongside your executable binary in the bundle directory there are two directories:
+- `lib/` contains the required .so library files
+- `data/` contains the application’s data assets, such as fonts or images
 
 ## 3. Cross-building from x64 to arm64
 Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, Use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
