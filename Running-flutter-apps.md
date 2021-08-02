@@ -29,3 +29,14 @@ $ flutter-elinux run -d elinux-x11
 
 ## 3. Use custom-devices
 You can install, uninstall, debug, and so on to remote arm64 devices such as Raspberry Pi4 from host desktops. See [Remote target devices](https://github.com/sony/flutter-elinux/wiki/Remote-target-devices)
+
+## 4. Run without the flutter-elinux command
+The executable binary can be found in your project under `./build/<target_arch>/<build_mode>/bundle`.
+
+```Shell:
+$ ./build/<target_arch>/<build_mode>/bundle/<app name>
+```
+
+See also:
+- [How to run Flutter apps](https://github.com/sony/flutter-embedded-linux/wiki/How-to-run-Flutter-apps)
+- [Build artifacts](https://github.com/sony/flutter-elinux/wiki/Building-flutter-apps#2-build-artifacts)
