@@ -25,7 +25,7 @@ In embedded development, we usually install software to remote target devices. I
         "ssh", "user@192.168.0.100", "rm -rf \"/tmp/${appName}\""
       ],
       "runDebug": [
-        "ssh", "user@192.168.0.100", "/tmp/${appName}/${appName} -b ."
+        "ssh", "user@192.168.0.100", "/tmp/${appName}/${appName}"
       ],
       "forwardPort": [
         "ssh", "-o", "ExitOnForwardFailure=yes",
