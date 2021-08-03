@@ -34,7 +34,7 @@ The artifacts will be put in your project under `./build/<target_arch>/<build_mo
 - `data/` contains the application’s data assets, such as fonts or images
 
 ## 3. Cross-building from x64 to arm64
-Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, Use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
+Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
 
 ```Shell
 $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_target's_sysroot>
