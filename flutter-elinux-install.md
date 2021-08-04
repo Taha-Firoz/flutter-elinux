@@ -8,7 +8,7 @@ Currently, this tool supports only **Linux** desktop (not supoort Windows and ma
 - curl
 - git
 - clang
-- cmake
+- cmake (>= 3.15)
 - pkg-config
 
 ```Shell
