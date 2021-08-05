@@ -4,7 +4,7 @@ In embedded development, we usually install software to remote target devices. I
 `${localPath}`, `${appName}`, `${hostPort}`, `${devicePort}` are the system reserved vars, which are automatically determined by flutter-elinux tool. Set each value appropriately according to your target device. Also, you can add multi devices to the JSON file.
 
 | name            | description     | type            | default         |
-| :-------------: | :-------------: | :-------------: | :-------------: |
+| :-------------: | --------------- | :-------------: | :-------------: |
 | id              | A unique, short identification string for this device. Used for example as an argument to the flutter-elinux run command. | string | - |
 | label           | A more descriptive, user-friendly label for the device. | string | "" |
 
