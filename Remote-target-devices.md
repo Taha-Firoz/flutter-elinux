@@ -1,4 +1,4 @@
-In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps.
+In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps. This feature is the extension to official custom-devices. See also: [Using custom embedders with the Flutter CLI](https://github.com/flutter/flutter/wiki/Using-custom-embedders-with-the-Flutter-CLI)
 
 ## 1. Create `~/.flutter_custom_devices.json`
 `${localPath}`, `${appName}`, `${hostPort}`, `${devicePort}` are the system reserved vars, which are automatically determined by flutter-elinux tool. Set each value appropriately according to your target device. Also, you can add multi devices to the JSON file.
@@ -7,6 +7,8 @@ In embedded development, we usually install software to remote target devices. I
 | :-------------: | --------------- | :-------------: | :-------------: |
 | id              | A unique, short identification string for this device. Used for example as an argument to the flutter-elinux run command. | string | - |
 | label           | A more descriptive, user-friendly label for the device. | string | "" |
+
+To Be Added
 
 `~/.flutter_custom_devices.json` example:
 ```Json
