@@ -11,7 +11,9 @@ For reference, the toolchain that the current .so files are built is below.
 ## 1. Self-building
 Use `--target-backend-type` option to select display backends. Default is Wayland.
 
-**Note: `gbm` and `eglstream` are not supported yet!**
+### Note:
+- We do **not** expect to use `x11` in embedded products, it is just for **debugging** on Linux desktops.
+- `gbm` and `eglstream` are not supported yet!
 
 |Build mode |Target backend| Command |
 | --------- | ------------ | ------- |
