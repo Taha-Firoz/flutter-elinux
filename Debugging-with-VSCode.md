@@ -13,12 +13,12 @@ flutter: Observatory listening on http://127.0.0.1:43377/390I4oPyQ0U=/
 If you want to fix always same observatory URI, you can use the following command options. Note that this option is only available in debug/profile mode.
 
 ```Shell
-$ flutter-elinux run -d elinux-wayland \
-    --device-vmservice-port=12345 --disable-service-auth-codes
+$ flutter-elinux run -d elinux-wayland --disable-service-auth-codes\
+    --device-vmservice-port=12345 --host-vmservice-port=42771
 
 (snip)
 
-An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:12345/
+An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:42771/
 ```
 
 ## 3. Create `launch.json`
