@@ -9,7 +9,7 @@ You will find the following message in the console when you run Flutter apps. Yo
 flutter: Observatory listening on http://127.0.0.1:43377/390I4oPyQ0U=/
 ```
 
-### Fixed observatory-port and disable auth-service in Dart VM
+### Fixed observatory URI
 If you want to fix always same observatory URI, you can use the following command options. Note that this option is only available in debug/profile mode.
 
 ```Shell
