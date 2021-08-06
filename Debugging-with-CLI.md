@@ -16,7 +16,7 @@ $ flutter-elinux run -d elinux-wayland \
 
 (snip)
 
-flutter: Observatory listening on http://127.0.0.1:12345/
+An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:12345/
 ```
 
 ## 2. Flutter attach debugger
