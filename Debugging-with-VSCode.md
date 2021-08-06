@@ -9,6 +9,19 @@ You will find the following message in the console when you run Flutter apps. Yo
 flutter: Observatory listening on http://127.0.0.1:43377/390I4oPyQ0U=/
 ```
 
+### Fixed observatory-port and disable auth-service in Dart VM
+You can use the environment variables such as `FLUTTER_ENGINE_SWITCHES`, `FLUTTER_ENGINE_SWITCH_*` to use Dart VM command line options. If you want to fix always same observatory URI, you can use the following command. Note that this option is only available in debug mode.
+
+```Shell
+$ export FLUTTER_ENGINE_SWITCHES=2
+$ export FLUTTER_ENGINE_SWITCH_1="observatory-port=12345"
+$ export FLUTTER_ENGINE_SWITCH_2="disable-service-auth-codes"
+
+(snip)
+
+flutter: Observatory listening on http://127.0.0.1:12345/
+```
+
 ## 3. Create `launch.json`
 Create a [launch.json file](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) like the following.
 
