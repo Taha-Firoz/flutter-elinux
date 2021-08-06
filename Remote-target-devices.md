@@ -1,14 +1,23 @@
-In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps. This feature is the extension to official custom-devices. See also: [Using custom embedders with the Flutter CLI](https://github.com/flutter/flutter/wiki/Using-custom-embedders-with-the-Flutter-CLI)
+In embedded development, we usually install software to remote target devices. In that case, the `custom-devices` feature helps you develop your flutter apps. This feature is the extension to official custom-devices. Special thanks to [ardera](https://github.com/ardera). See also: [Using custom embedders with the Flutter CLI](https://github.com/flutter/flutter/wiki/Using-custom-embedders-with-the-Flutter-CLI)
 
 ## 1. Create `~/.flutter_custom_devices.json`
 `${localPath}`, `${appName}`, `${hostPort}`, `${devicePort}` are the system reserved vars, which are automatically determined by flutter-elinux tool. Set each value appropriately according to your target device. Also, you can add multi devices to the JSON file.
 
 | name            | description     | type            | default         |
-| :-------------: | --------------- | :-------------: | :-------------: |
+| --------------- | --------------- | :-------------: | :-------------: |
 | id              | A unique, short identification string for this device. Used for example as an argument to the flutter-elinux run command. | string | - |
 | label           | A more descriptive, user-friendly label for the device. | string | "" |
-
-To Be Added
+| sdkNameAndVersion | Additional information about the device. For other devices, this is the SDK (for example Android SDK, Windows SDK) name and version. | string | "" |
+| enabled | If false, this device will be ignored completely by the flutter SDK and none of the commands configured will be called. You can use this as a way to comment out device configs you're still working on, for example. | boolean | true |
+| platform | The platform of the target device. | [x64, arm64] | arm64 |
+| backend | The displaybackend of the target device. | [wayland, x11, gbm, eglstream] | wayland |
+| ping | The command to be invoked to ping the device. Used to find out whether its available or not. Every exit code unequal 0 will be treated as \"unavailable\". On Windows, consider providing a \"pingSuccessRegex\" since Windows' ping will also return 0 on failure. Make sure the command times out internally since it's not guaranteed the flutter SDK will enforce a timeout itself. | array | - |
+| pingSuccessRegex | When the output of the ping command matches this regex (and the ping command finished with exit code 0), the ping will be considered successful and the pinged device reachable. If this regex is not provided the ping command will be considered successful when it returned with exit code 0. The regex syntax is the standard dart syntax. | string | - |
+| install | The command to be invoked to install the app on the device. The path to the directory / file to be installed (copied over) to the device is available via the ${localPath} string interpolation and the name of the app to be installed via the ${appName} string interpolation. | string | - |
+| uninstall | The command to be invoked to remove the app from the device. Invoked before every invocation of the app install command. The name of the app to be removed is available via the ${appName} string interpolation. | string | - |
+| runDebug | The command to be invoked to run the app in debug mode. The name of the app to be started is available via the ${appName} string interpolation. Make sure the flutter cmdline output is available via this commands stdout/stderr since the SDK needs the \"Observatory is now listening on ...\" message to function. If the forwardPort command is not specified, the observatory URL will be connected to as-is, without any port forwarding. In that case you need to make sure it is reachable from your host device, possibly via the \"--observatory-host=<ip>\" engine flag. | array | - |
+| forwardPort | The command to be invoked to forward a specific device port to a port on the host device. The host port is available via ${hostPort} and the device port via ${devicePort}. On success, the command should stay running for the duration of the forwarding. The command will be terminated using SIGTERM when the forwarding should be stopped. When using ssh, make sure ssh quits when the forwarding fails since thats not the default behaviour. | array | - |
+| forwardPortSuccessRegex | A regular expression to be used to classify a successful port forwarding. As soon as any line of stdout or stderr of the forward port command matches this regex, the port forwarding is considered successful. The regex syntax is the standard dart syntax. This value needs to be present & non-null when \"forwardPort\" specified. | array | - |
 
 `~/.flutter_custom_devices.json` example:
 ```Json
