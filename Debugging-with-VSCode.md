@@ -14,7 +14,7 @@ Create a [launch.json file](https://code.visualstudio.com/docs/editor/debugging#
 
 ```Json
 {
-  "version": "0.2.0"
+  "version": "0.2.0",
   "configurations": [
     {
       "type": "dart",
