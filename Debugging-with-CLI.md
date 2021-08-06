@@ -12,11 +12,11 @@ If you want to fix always same observatory URI, you can use the following comman
 
 ```Shell
 $ flutter-elinux run -d elinux-wayland \
-    --device-vmservice-port=12345 --disable-service-auth-codes
+    --device-vmservice-port=12345 --host-vmservice-port=42771 --disable-service-auth-codes
 
 (snip)
 
-An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:12345/
+An Observatory debugger and profiler on eLinux is available at: http://127.0.0.1:42771/
 ```
 
 ## 2. Flutter attach debugger
