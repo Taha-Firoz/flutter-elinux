@@ -13,7 +13,8 @@ flutter: Observatory listening on http://127.0.0.1:43377/390I4oPyQ0U=/
 If you want to fix always same observatory URI, you can use the following command options. Note that this option is only available in debug/profile mode.
 
 ```Shell
-$ flutter-elinux run -d elinux-x11 --device-vmservice-port=12345 --disable-service-auth-codes
+$ flutter-elinux run -d elinux-x11 \
+    --device-vmservice-port=12345 --disable-service-auth-codes
 
 (snip)
 
