@@ -65,7 +65,7 @@ S sudo apt install qemu-user-static
 ```
 
 ```Shell
-$ sudo docker run -it arm64v8/ubuntu:18:04
+$ sudo docker run -it arm64v8/ubuntu:18.04
 ```
 
 In docker:
