@@ -70,6 +70,7 @@ $ sudo docker run -it arm64v8/ubuntu:18.04
 
 In docker:
 ```Shell
+apt update
 apt install clang cmake build-essential \
             pkg-config libegl1-mesa-dev \
             libxkbcommon-dev libgles2-mesa-dev
