@@ -36,6 +36,12 @@ For reference, the toolchain that the current .so files are built is below.
 | libflutter_engine.so | clang/llvm (Google Chromium) | Google Chromium | 2.29 |
 | libflutter_elinux_*.so | clang/llvm (Ubuntu 18.04) | Ubuntu 18.04 for arm64 | 2.27 |
 
+### How to build libflutter_engine.so and libflutter_elinux_*.so
+See the following links.
+- libflutter_engine.so: [Building Flutter Engine from source](https://github.com/sony/flutter-embedded-linux/wiki/Building-Flutter-Engine-from-source)
+- libflutter_elinux_wayland.so: [Building Embedded Linux embedding for Flutter](https://github.com/sony/flutter-embedded-linux/wiki/Building-Embedded-Linux-embedding-for-Flutter)
+
+
 ## 3. Cross-building from x64 to arm64
 Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
 
