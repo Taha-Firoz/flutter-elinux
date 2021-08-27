@@ -4,7 +4,7 @@ Use `--target-backend-type` option to select display backends. Default is Waylan
 ### Note:
 - We do **not** expect to use `x11` in embedded products, it is just for **debugging** on Linux desktops.
 - `gbm` and `eglstream` will basically work but they are still development phase (have some issues).
-  - See: https://github.com/sony/flutter-embedded-linux/issues
+  - See: [sony/flutter-embedded-linux/issues for DRM](https://github.com/sony/flutter-embedded-linux/issues?q=is%3Aissue+is%3Aopen+label%3Adrm)
 
 |Build mode |Target backend| Command |
 | --------- | ------------ | ------- |
