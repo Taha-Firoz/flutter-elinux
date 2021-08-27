@@ -33,7 +33,7 @@ You can install, uninstall, debug, and so on to remote arm64 devices such as Ras
 ## 4. Run without the flutter-elinux command
 The executable binary can be found in your project under `./build/<target_arch>/<build_mode>/bundle`.
 
-```Shell:
+```Shell
 # Checks command options
 $ ./build/<target_arch>/<build_mode>/bundle/<your_app_name> --help
 # Run your flutter app
