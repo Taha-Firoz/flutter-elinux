@@ -34,7 +34,10 @@ You can install, uninstall, debug, and so on to remote arm64 devices such as Ras
 The executable binary can be found in your project under `./build/<target_arch>/<build_mode>/bundle`.
 
 ```Shell:
-$ ./build/<target_arch>/<build_mode>/bundle/<app name>
+# Checks command options
+$ ./build/<target_arch>/<build_mode>/bundle/<your_app_name> --help
+# Run your flutter app
+$ ./build/<target_arch>/<build_mode>/bundle/<your_app_name>
 ```
 
 See also:
