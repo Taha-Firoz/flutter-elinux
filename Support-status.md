@@ -1,5 +1,5 @@
 ## Supported platforms
-This software supports x64 and Arm64 (aarch64, ARMv8) architectures on Linux which supports either Wayland backend or DRM backend.
+The flutter for eLinux (this software) supports x64 and Arm64 (aarch64, ARMv8) architectures on Linux which supports either Wayland backend or DRM backend. There is the option for X11 backend, but it is **out of support** on real Arm64 devices because it is just for debugging on Linux desktop when developers create and debug their Flutter apps.
 
 ## Tested devices
 | Board / SoC | Vendor | OS / BSP | Backend | Status |
