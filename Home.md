@@ -1,4 +1,4 @@
-Welcome to the flutter-elinux wiki! All documentation for this software is collected here.
+Welcome to the flutter-elinux wiki! User documentation including quick start guides can be found here.
 
 ## 💻 Contents
 ## 1. Setting up flutter-elinux
