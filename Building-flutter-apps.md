@@ -26,7 +26,7 @@ The artifacts will be put in your project under `./build/<target_arch>/<build_mo
 - `lib/` contains the required .so library files
 - `data/` contains the application’s data assets, such as fonts or images
 
-![artifact-relationships](https://github.com/sony/flutter-elinux/tree/main/doc/images/artifact-relationships.png)
+![artifact-relationships](doc/images/artifact-relationships.png)
 
 ### Pre-built images
 flutter-elinux download the Flutter engine artifacts such as `libflutter_engine.so` and `libflutter_elinux_wayland.so` to `./flutter/bin/cache/artifacts/engine` automatically when you build your Flutter app. These .so files are download from [sony/flutter-embedded-linux/releases](https://github.com/sony/flutter-embedded-linux/releases) built with a specific toolchain. Therefore, if you want to use your toolchain, you need to build it yourself.
