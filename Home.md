@@ -19,7 +19,7 @@ Welcome to the flutter-elinux wiki! User documentation including quick start gui
 Flutter plugins like VideoPlayer for eLinux are put and developing in [flutter-elinux-plugins](https://github.com/sony/flutter-elinux-plugins).
 
 ## 4. Release policy
-This tool is released in conjunction with the [beta channel of the official Flutter](https://flutter.dev/docs/development/tools/sdk/releases?tab=linux). We plan to switch to following the stable channel in the near future.
+This tool is released in conjunction with the [stable channel of the official Flutter](https://flutter.dev/docs/development/tools/sdk/releases?tab=linux).
 
 ## 5. Support status
 See: [Support status](https://github.com/sony/flutter-elinux/wiki/Support-status)
