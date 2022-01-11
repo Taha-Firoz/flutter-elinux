@@ -8,11 +8,12 @@ Currently, this tool supports only **Linux** desktop (not supoort Windows and ma
 - curl
 - git
 - clang
+- unzip
 - cmake (>= 3.15)
 - pkg-config
 
 ```Shell
-$ sudo apt install curl git clang cmake pkg-config
+$ sudo apt install curl unzip git clang cmake pkg-config
 ```
 
 ## 2. flutter-elinux install
