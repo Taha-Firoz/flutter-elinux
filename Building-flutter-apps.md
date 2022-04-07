@@ -56,8 +56,8 @@ $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_targ
 ### Use cases
 There are some ways to cross-build, and are some ways to create a sysroot like Yocto, buildroot, and so on.
 1. [Use Docker + QEMU](#case-1-use-docker--qemu)
-2. Use buildroot
-3. Use Yocto SDK
+2. [Use Yocto SDK]()
+3. Use buildroot
 
 ### Case 1: Use Docker + QEMU
 Here, we show an example using a sysroot for arm64v8/ubuntu:18.04 docker image and a host's toolchain, but using sysroot and toolchain for your target device is better.
@@ -119,3 +119,18 @@ $ flutter-elinux build elinux --target-arch=arm64 \
      --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot \
      --system-include-directories=/usr/aarch64-linux-gnu/include/c++/${version}/aarch64-linux-gnu
 ```
+
+### Case 2: Use Yocto SDK
+
+```shell
+export TARGET_ARCH="aarch64-poky-linux" && \
+. /opt/fsl-imx-wayland/5.4-zeus/environment-setup-$TARGET_ARCH && \
+echo 'set ( CMAKE_C_COMPILER_WORKS 1 )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
+echo 'set ( CMAKE_C_COMPILER_TARGET "'$TARGET_ARCH'" )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
+echo 'set ( CMAKE_CXX_COMPILER_WORKS 1 )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
+echo 'set ( CMAKE_CXX_COMPILER_TARGET "'$TARGET_ARCH'" )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
+mv $OECORE_NATIVE_SYSROOT/usr/bin/ld $OECORE_NATIVE_SYSROOT/usr/bin/ld.x86_64 && \
+cp -a $OECORE_NATIVE_SYSROOT/usr/bin/$TARGET_ARCH/${TARGET_PREFIX}ld $OECORE_NATIVE_SYSROOT/usr/bin/ld
+```
+
+See also: https://github.com/sony/flutter-embedded-linux/issues/4#issuecomment-1090157925
