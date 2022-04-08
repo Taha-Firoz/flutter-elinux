@@ -122,15 +122,11 @@ $ flutter-elinux build elinux --target-arch=arm64 \
 
 ### Case 2: Use Yocto SDK
 
-```shell
-export TARGET_ARCH="aarch64-poky-linux" && \
-. /opt/fsl-imx-wayland/5.4-zeus/environment-setup-$TARGET_ARCH && \
-echo 'set ( CMAKE_C_COMPILER_WORKS 1 )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
-echo 'set ( CMAKE_C_COMPILER_TARGET "'$TARGET_ARCH'" )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
-echo 'set ( CMAKE_CXX_COMPILER_WORKS 1 )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
-echo 'set ( CMAKE_CXX_COMPILER_TARGET "'$TARGET_ARCH'" )' >> $OECORE_NATIVE_SYSROOT/usr/share/cmake/OEToolchainConfig.cmake && \
-mv $OECORE_NATIVE_SYSROOT/usr/bin/ld $OECORE_NATIVE_SYSROOT/usr/bin/ld.x86_64 && \
-cp -a $OECORE_NATIVE_SYSROOT/usr/bin/$TARGET_ARCH/${TARGET_PREFIX}ld $OECORE_NATIVE_SYSROOT/usr/bin/ld
+Use `target-compiler-triple` option to set `CMAKE_C_COMPILER_TARGET` and `CMAKE_CXX_COMPILER_TARGET` in the toolchain cmake configuration file make it use the right compiler path and filename.
+
+```Shell
+$ flutter-elinux build elinux --target-arch=arm64 \
+     --target-compiler-triple=aarch64-poky-linux
 ```
 
 See also: https://github.com/sony/flutter-embedded-linux/issues/4#issuecomment-1090157925
