@@ -122,11 +122,31 @@ $ flutter-elinux build elinux --target-arch=arm64 \
 
 ### Case 2: Use Yocto SDK
 
+#### Setup Yocto SDK environment.
+
+See: [Cross-building using Yocto SDK](https://github.com/sony/meta-flutter#cross-building-using-yocto-sdk)
+
+```Shell
+$ source /opt/poky/3.1.15/environment-setup-aarch64-poky-linux
+$ export CC=${CLANGCC}
+$ export CXX=${CLANGCXX}
+```
+
+See: https://github.com/sony/flutter-embedded-linux/issues/4#issuecomment-1090157925
+
+```Shell
+$ sudo mv /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/ld \
+          /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/ld.x86_64
+$ sudo cp -a /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ld \
+             /opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/ld
+```
+
 Use `target-compiler-triple` option to set `CMAKE_C_COMPILER_TARGET` and `CMAKE_CXX_COMPILER_TARGET` in the toolchain cmake configuration file make it use the right compiler path and filename.
+
+#### Cross-building on x64 for arm64
 
 ```Shell
 $ flutter-elinux build elinux --target-arch=arm64 \
-     --target-compiler-triple=aarch64-poky-linux
+     --target-compiler-triple=aarch64-poky-linux \
+     --target-sysroot=/opt/poky/3.1.16/sysroots/aarch64-poky-linux
 ```
-
-See also: https://github.com/sony/flutter-embedded-linux/issues/4#issuecomment-1090157925
