@@ -150,3 +150,19 @@ $ flutter-elinux build elinux --target-arch=arm64 \
      --target-compiler-triple=aarch64-poky-linux \
      --target-sysroot=/opt/poky/3.1.16/sysroots/aarch64-poky-linux
 ```
+
+### Case 3: Use Buildroot Toolchain
+As Buildroot doesn't come with clang tool, you should install it yourself. In the command below, clang will use `aarch64-buildroot-linux-gnu-ld`, which comes with your buildroot, as the linker.
+
+```
+sudo apt install clang
+sudo apt install wayland-protocols libwayland-bin # host tools needed to build wayland backend
+
+export PATH=$PATH:~/buildroot/output/host/bin # add aarch64-buildroot-linux-gnu-ld to PATH
+
+~/flutter-elinux/bin/flutter-elinux build elinux --target-arch=arm64 \
+                                                 --target-compiler-triple=aarch64-buildroot-linux-gnu \
+                                                 --target-sysroot=~/buildroot/output/staging \
+                                                 --target-compiler-flags=--gcc-toolchain=~/buildroot/output/host
+```
+
