@@ -47,7 +47,12 @@ See the following links.
 
 
 ## 3. Cross-building from x64 to arm64
-Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, use `--target-arch` option to specify arm64 targets. Default is current host CPU architecture. 
+Cross-building requires knowledge (Not easy, you might get build errors). You need to prepare your sysroot which is for cross-building for your target device by using `--target-sysroot`. Also, you can use the following options.
+
+|build command options|description|default|
+|-|-|-|
+|--target-arch|specify arm64 targets|current host CPU architecture (self builds)|
+|--target-toolchain|specify custom toolchain path|null ('/')|
 
 ```Shell
 $ flutter-elinux build elinux --target-arch=arm64 --target-sysroot=<path_to_target's_sysroot>
