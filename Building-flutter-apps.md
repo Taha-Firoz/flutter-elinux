@@ -106,7 +106,9 @@ $ sudo docker cp f367a6b0316f:/ ubuntu18-arm64-sysroot
 
 #### Build flutter apps
 ```Shell
-$ flutter-elinux build elinux --target-arch=arm64 \
+$ flutter-elinux build elinux \
+     --target-arch=arm64 \
+     --target-compiler-triple=aarch64-linux-gnu \
      --target-sysroot=<Absolute_path_to>/ubuntu18-arm64-sysroot
 ```
 
